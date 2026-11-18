@@ -53,7 +53,7 @@
         },
         "outputId": "1eece0ca-9fdc-4c93-9f55-0728d0d2accf"
       },
-      "execution_count": 1,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -287,7 +287,7 @@
       "metadata": {
         "id": "pU043sJiFjet"
       },
-      "execution_count": 2,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -302,7 +302,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 3,
+      "execution_count": null,
       "metadata": {
         "id": "048YVK6TChZV",
         "colab": {
@@ -350,7 +350,7 @@
         },
         "outputId": "24d699f4-6bad-45bb-e076-d19e2ac4e6e3"
       },
-      "execution_count": 4,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -5391,7 +5391,7 @@
       "metadata": {
         "id": "yOQLobhOZsI3"
       },
-      "execution_count": 5,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -5479,7 +5479,7 @@
       "metadata": {
         "id": "dFf8B5smp1MU"
       },
-      "execution_count": 7,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -5591,7 +5591,7 @@
         "id": "jT9g_eoUq07y",
         "outputId": "685a6060-f030-4c37-dfd6-830a2e9f5270"
       },
-      "execution_count": 8,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -5643,7 +5643,7 @@
       "metadata": {
         "id": "X4ZbqKGsK3yb"
       },
-      "execution_count": 9,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -5674,7 +5674,7 @@
         "id": "_3-C4ULMr_em",
         "outputId": "255e4e01-6964-44fd-dc3c-d16c999bfebe"
       },
-      "execution_count": 10,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -5802,7 +5802,7 @@
         "id": "bRu41LfNtyEs",
         "outputId": "63d25b65-9b42-4968-b8bf-1943200bc2f2"
       },
-      "execution_count": 11,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -6034,7 +6034,7 @@
         "    pneumonia_count = len(os.listdir(os.path.join(path, \"PNEUMONIA\")))\n",
         "    print(f\"{folder.capitalize()} set -> Normal: {normal_count}, Pneumonia: {pneumonia_count} (Total: {normal_count + pneumonia_count})\")\n"
       ],
-      "execution_count": 12,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -6072,7 +6072,7 @@
         "val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, pin_memory=True)\n",
         "test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, pin_memory=True)"
       ],
-      "execution_count": 15,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -6125,7 +6125,7 @@
         "cnn = PneumoniaCNN()\n",
         "print(cnn)"
       ],
-      "execution_count": 16,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -6171,7 +6171,7 @@
         "# Define Adam Optimizer with weight decay\n",
         "optimiser = optim.Adam(cnn.parameters(), lr=0.001, weight_decay=0.0005)"
       ],
-      "execution_count": 17,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -6193,7 +6193,7 @@
         "# Print the model summary\n",
         "summary(cnn, (3, 32, 32))"
       ],
-      "execution_count": 19,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -6307,7 +6307,7 @@
         "        print(f\"\\nEarly stopping triggered. Validation loss did not improve for {patience} consecutive epochs.\")\n",
         "        break"
       ],
-      "execution_count": 20,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -6351,7 +6351,7 @@
         "plt.grid(True, linestyle='--', alpha=0.7)\n",
         "plt.show()"
       ],
-      "execution_count": 21,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -6408,7 +6408,7 @@
         "print(f\"Test Accuracy: {test_accuracy * 100:.2f}%\")\n",
         "print(f\"Test Recall: {test_recall * 100:.2f}%\")"
       ],
-      "execution_count": 22,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
